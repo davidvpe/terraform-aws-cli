@@ -43,7 +43,7 @@ RUN apt-get update \
     git=1:2.30.2-1 \
     jq=1.6-2.1 \
     python3=${PYTHON_MAJOR_VERSION}.2-3 \
-    curl=7.74.0-1.3+b1
+    curl=7.74.0-1.3+b1 \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* \
   && update-alternatives --install /usr/bin/python python /usr/bin/python${PYTHON_MAJOR_VERSION} 1
